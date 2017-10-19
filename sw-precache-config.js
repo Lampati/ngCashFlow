@@ -8,5 +8,14 @@ module.exports = {
     ],
     root: 'dist',
     stripPrefix: 'dist/',
-    navigateFallback: '/index.html'
+    navigateFallback: '/index.html',
+
+    runtimeCaching: [{
+      urlPattern: /cashflow-fl\.firebaseapp\.com/,
+      handler: 'networkFirst'
+    }]
   };
+
+
+
+  
