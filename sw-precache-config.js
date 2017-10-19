@@ -1,5 +1,6 @@
 module.exports = {
-    staticFileGlobs: [     
+    staticFileGlobs: [
+      'dist/**.html',
       'dist/**.js',
       'dist/**.css',
       'dist/assets/images/*',
@@ -7,8 +8,12 @@ module.exports = {
     ],
     root: 'dist',
     stripPrefix: 'dist/',
-    navigateFallback: '/index.html',
-    dontCacheBustUrlsMatching:'/^(?=.*\.\w{1,7}$)/'   
+    navigateFallback: '/index.html',    
+
+    runtimeCaching: [{
+      urlPattern: /cashflow-fl\.firebaseapp\.com/,
+      handler: 'networkFirst'
+    }]
   };
 
 
