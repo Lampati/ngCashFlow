@@ -10,10 +10,7 @@ module.exports = {
     stripPrefix: 'dist/',
     navigateFallback: '/index.html',
 
-    runtimeCaching: [{
-      urlPattern: /cashflow-fl\.firebaseapp\.com/,
-      handler: 'networkFirst'
-    }]
+   
   };
 
 
