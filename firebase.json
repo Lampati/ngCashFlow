@@ -18,7 +18,7 @@
     // don't cache service worker
     "source" : "**",
     "headers" : [ {
-      "key" : "Cache-Control",
+      "key" : "cache-control",
       "value" : "max-age=0"
     } ]
   } ]
